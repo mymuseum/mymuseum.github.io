@@ -1,0 +1,45 @@
+/* CSS Document */
+
+div.clSlideMenu{ /* All slideMenu2 DIV elements */
+	position:absolute;
+	font-family:verdana,arial,helvetica;
+	font-size:10px;
+	overflow:hidden;
+	width:165;
+	height:15;
+}
+a.clA0{ /* All top level links */
+	color:black;
+	font-size:10px;
+	text-decoration:none;
+	margin-left:9px;
+	line-height:11px;
+	font-weight:normal;
+}
+a.clA1{ /* All sub level links */
+	color:black;
+	font-size:10px;
+	text-decoration:none;
+	line-height:11px;
+	font-weight:normal;
+}
+a.clA2{ /* All sub2 level links */
+	color:navy;
+	text-decoration:none;
+}
+a.clA3{ /* All sub3 level links */
+	color:black;
+	text-decoration:none;
+}
+a.clA4{ /* All sub4 level links */
+	color:green;
+	text-decoration:none;
+}
+
+/* NEEDED STYLES */
+div.slideMenuBG{position:absolute; left:0; top:0; z-index:1}
+div.slideMenuText{position:absolute; left:2; top:2; z-index:200;}
+/* NEEDED ----- This class should be named like this:
+	#NAME_OF_YOUR_MENUcont
+*/
+#slideMenucont{position:absolute; height:*; width:169; visibility:hidden;}
