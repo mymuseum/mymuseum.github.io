@@ -1,0 +1,131 @@
+body{
+  background-color: #ffffff;
+  color: #7C7C7C;
+  font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  /* this attribute sets the basis for all the other scrollbar colors (Internet Explorer 5.5+ only) */
+  scrollbar-face-color: #002040; 
+  scrollbar-shadow-color: #003333; 
+  scrollbar-highlight-color: #003333;
+  scrollbar-3dlight-color: #000033; 
+  scrollbar-darkshadow-color: #000033; 
+  scrollbar-track-color: #000000; 
+  scrollbar-arrow-color: #cccccc
+}
+
+a{
+	font-family:verdana,sans-serif;
+	font-size:10px;
+	color:#777777;
+	font-weight:bold;
+	text-decoration:none;
+
+}
+
+a:hover{
+	font-family:verdana,sans-serif;
+	font-size:10px;
+	color:#000000;
+	font-weight:bold;
+	text-decoration:none;
+
+
+}
+
+a.mail{
+	font-family:verdana,sans-serif;
+	font-size:10px;
+	color:#597396;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+a.mail:hover{
+	font-family:verdana,sans-serif;
+	font-size:10px;
+	color:#444444;
+	font-weight:bold;
+	text-decoration:none;
+	
+}
+
+img.princ{
+	border:1px solid #444444;
+	float:left;
+	margin-right:1px;
+}
+
+img{
+    vertical-align:top;
+border:0px solid #777777;
+margin-top:5px;
+}
+
+
+/** ------------------------------D du C P------------------------------------- */
+
+.logo{
+    vertical-align:top;
+border:1px solid #777777;
+}
+
+.anim{
+
+	float:left;
+	border:1px solid #777777;
+
+}
+
+.titre{
+
+      font-family:sans-serif;
+      color:#000000;
+      font-size:12px;
+      font-weight:bold;
+      border-bottom:1px dashed #777777;
+      display:block;
+}
+
+
+
+.main{
+      font-family:arial;
+      font-size:10px;
+      color:#aaaaaa;
+
+      padding-left:0px;
+      padding-right:0px;
+      padding-top:0px;
+      padding-bottom:0px;	
+
+      position:absolute;
+      text-align:left;
+
+      border:0px solid #777777;
+}
+
+.partie_lien{
+	float:left;
+	position:relative;
+
+	padding-left:0px;
+	border:0px solid;
+}
+
+.copyright{
+
+  font-style:italic;
+      font-size:10px;
+	float:left;
+	position:relative;
+	padding-left:0px;
+	border:0px solid;
+}
+
+.news_text{
+color:#000000;
+	text-align:left;
+	font-size:10px;
+	font-family:sans-serif;
+	font-weight:normal;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<META HTTP-EQUIV="expires" CONTENT="0">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<link href="finn.css" rel="stylesheet" type="text/css">
+<link href="menu.css" rel="stylesheet" type="text/css">
+
+<link rel="STYLESHEET" type="text/css" href="finn.css">
+<script language="JavaScript" src="javascript/slidemenu.js" type="text/javascript">
+/**********************************************************************************
+SlideMenu 2.0
+*   Copyright (C) 2002 Thomas Brattli
+*   This script was released at DHTMLCentral.com
+*   Visit for more great scripts!
+*   This may be used and changed freely as long as this msg is intact!
+*   We will also appreciate any links you could give us.
+*
+*   Made by Thomas Brattli
+*
+*Script date: 08/05/2002 (keep this date to check versions)
+*Updated to modify div/iframe size, placement and contents 16/06/03
+*flash and dhtml menus built same from database 
+*   Mods by James Kaye 
+*   j.kaye@toffeeapplecreative.com
+*********************************************************************************/
+</script>
+<style title="text/css">
+
+/* NEEDED STYLES */
+div.slideMenuBG{position:absolute; left:0; top:0; z-index:1}
+div.slideMenuText{position:absolute; left:2; top:2; z-index:200;}
+/* NEEDED ----- This class should be named like this:
+	#NAME_OF_YOUR_MENUcont
+*/
+#slideMenucont{position:absolute; height:*; width:169; visibility:hidden;}
+
+</style>
+
+</head>
+<body marginleft="0"  bgcolor="white" marginheight="0" class="iframe_bodymenu">
+<script>
+
+slideMenu = new createSlideMenu("slideMenu")
+
+
+slideMenu.menuy=1 
+slideMenu.menux=0 
+slideMenu.useImages = 1 
+slideMenu.pxspeed=20 
+slideMenu.timspeed=25 
+slideMenu.inset = 0 
+slideMenu.arrow = 0 
+	
+
+//Needed dummy classes - 
+slideMenu.bgClass =	"slideMenuBG"
+slideMenu.txtClass = "slideMenuText"
+
+slideMenu.level[0] = new slideMenu_makeLevel(
+	left = 0,
+	width = 168,
+	height = 15,
+	between = 0,
+	className = "clSlideMenu",
+	classNameA = "clA0",
+	regImage = "img/menu0cl.gif",
+	roundImg = "img/menu0op.gif",
+	roundImg2 = "",
+	subImg = "",
+	subRound= "")
+	
+slideMenu.level[1] = new slideMenu_makeLevel(12,157,15,2,"clSlideMenu","clA1","img/menu1op.gif")
+//Image preload ---
+for(var i=0;i<slideMenu.level;i++){
+	var l = slideMenu.level[i]
+	new preLoadBackgrounds(l.regImage,l.roundImg,l.roundImg2,l.subImg,l.subRound)
+}
+
+//Menu 1 -----------------------
+slideMenu.makeMenu('top','new','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,405,395,\'news.html\',\'news\');')
+slideMenu.makeMenu('top','биография','javascript:parent.togglemenu(\'finnsecond\',\'visible\',80,206,185,255,\'bios.html\',\'биография\');')
+slideMenu.makeMenu('top','творчество')
+slideMenu.makeMenu('sub','стихи','javascript:parent.togglemenu(\'finnsecond\',\'visible\',80,206,185,255,\'lyrics.html\',\'стихи\');')
+slideMenu.makeMenu('sub','рассказы','javascript:parent.togglemenu(\'finnsecond\',\'visible\',80,206,185,255,\'poems.html\',\'рассказы\');')
+slideMenu.makeMenu('sub','изо','javascript:parent.togglemenu(\'finnsecond\',\'visible\',80,206,185,255,\'painting.html\',\'изо\');')
+slideMenu.makeMenu('sub','мысли','javascript:parent.togglemenu(\'finnsecond\',\'visible\',80,206,185,255,\'thoughts.html\',\'мысли\');')
+slideMenu.makeMenu('sub','журнал','javascript:parent.togglemenu(\'finnsecond\',\'visible\',80,206,185,255,\'journal.html\',\'журнал\');')
+slideMenu.makeMenu('sub','дневник','javascript:parent.togglemenu(\'finnsecond\',\'visible\',80,206,350,355,\'pages/creation/diary/diary2006.html\',\'дневник\');')
+slideMenu.makeMenu('sub','сны','javascript:parent.togglemenu(\'finnsecond\',\'visible\',80,206,185,255,\'dreams.html\',\'сны\');')
+slideMenu.makeMenu('sub','бред','javascript:parent.togglemenu(\'finnsecond\',\'visible\',80,206,185,255,\'delirium.html\',\'бред\');')
+slideMenu.makeMenu('sub','дискография','javascript:parent.togglemenu(\'finnsecond\',\'visible\',80,206,350,395,\'discography.html\',\'дискография\');')
+
+slideMenu.makeMenu('top','музыка')
+slideMenu.makeMenu('sub','рецензии','javascript:parent.togglemenu(\'finnsecond\',\'visible\',80,206,255,255,\'review.html\',\'рецензии\');')
+slideMenu.makeMenu('sub','коцерты','javascript:parent.togglemenu(\'finnsecond\',\'visible\',80,206,255,255,\'concerts.html\',\'концерты\');')
+
+slideMenu.makeMenu('top','фотографии')
+slideMenu.makeMenu('sub','повседневность','javascript:parent.togglemenu(\'finnsecond\',\'visible\',80,206,320,355,\'pix_day.html\',\'фотографии\');')
+slideMenu.makeMenu('sub','личные','javascript:parent.togglemenu(\'finnsecond\',\'visible\',80,206,320,355,\'pix_my.html\',\'фотографии\');')
+
+slideMenu.makeMenu('top','файлы')
+slideMenu.makeMenu('sub','mp3','javascript:parent.togglemenu(\'finnsecond\',\'visible\',80,206,185,255,\'mp3.html\',\'mp3\');')
+slideMenu.makeMenu('sub','фильмы','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,405,395,\'pages/files/films.html\',\'фильмы\');')
+slideMenu.makeMenu('sub','клипы','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,405,395,\'pages/files/clips.html\',\'клипы\');')
+slideMenu.makeMenu('sub','книги','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,405,395,\'pages/files/books.html\',\'книги\');')
+slideMenu.makeMenu('sub','игры','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,405,395,\'pages/files/games.html\',\'игры\');')
+
+slideMenu.makeMenu('top','другое')
+slideMenu.makeMenu('sub','_гостевая_','javascript:parent.togglemenu(\'finnsecond\',\'visible\',80,206,605,405,\'http://www.narod.ru/guestbook/?owner=39015466;&mainhtml=gb.txt&messageshtml=mgb.txt\',\'гостевая\');')
+slideMenu.makeMenu('sub','контакты','javascript:parent.togglemenu(\'finnsecond\',\'visible\',280,206,285,100,\'contacts.html\',\'контакты\');')
+slideMenu.makeMenu('sub','ссылки','javascript:parent.togglemenu(\'finnsecond\',\'visible\',80,206,185,255,\'links.html\',\'ссылки\');')
+
+slideMenu.init()
+</script>
+</body>
+</html>

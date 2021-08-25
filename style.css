@@ -1,0 +1,47 @@
+A:link {color: #333333; text-decoration: none;}
+A:visited {color: #333333; text-decoration: none;}
+A:active  {color: #333333; text-decoration: none;}
+A:hover   {color: #333333; text-decoration: underline;}	
+
+body {	scrollbar-3dlight-color: #666666;
+	scrollbar-highlight-color: #FFFFFF;
+    scrollbar-face-color: #FFFFFF;
+    scrollbar-arrow-color: #FFFFFF;
+    scrollbar-shadow-color: #FFFFFF;
+    scrollbar-darkshadow-color: #666666;
+    scrollbar-base-color: #666666;
+    scrollbar-track-color: #FFFFFF;
+	margin-left : 20px;
+	margin-top : 0px;}
+
+.under {
+	font-family: Geneva, Arial, Helvetica, san-serif;
+	font-size: 9px;
+	line-height: 15px;
+	color: #666666;
+	text-decoration: none;
+	margin-left : 5px;
+}
+
+.txt {
+	font-family: Geneva, Arial, Helvetica, san-serif;
+	font-size: 11px;
+	line-height: 15px;
+	color: #666666;
+	text-decoration: none;
+	margin-left : 5px;
+}
+.head {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	line-height: 14px;
+	color: #666666;
+	margin : 10px;
+}
+.txtnews {
+	font-family: Geneva, Arial, Helvetica, san-serif;
+	font-size: 9px;
+	line-height: normal;
+	color: #ffffff;
+	text-decoration: none;
+}

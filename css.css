@@ -1,0 +1,211 @@
+.blank{
+}
+
+body{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.jpgfix{
+ background: #000000;
+}
+
+.logo{
+	position:absolute;
+	top:8px;
+	left:8px;
+	width:188px;
+	height:63px;
+	border: 1px solid #666666;
+	background: #FFFFFF url('img/logo2.jpg') no-repeat;
+	z-index:1; 
+	filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='#BFBFBF', Positive=true);
+	background-image:url('img/logo2.jpg'); background-repeat:no-repeat
+}
+.img{
+	border: 1px solid #666666;
+}
+.index{
+	position:absolute;
+	top:165px;
+	left:373px;
+	width:190px;
+	height:125px;
+	border: 1px solid #666666;
+	background: #FFFFFF url('img/muse_logo.gif') no-repeat;
+	z-index:1; 
+	filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='#BFBFBF', Positive=true);
+	background-image:url('img/muse_logo.gif'); background-repeat:no-repeat
+}
+.menuback{
+	position:absolute;
+	top:80px;
+	left:8px;
+	width:188px;
+	background: #FFFFFF;
+	border: 1px solid #666666;
+	height: 255px;	
+	z-index:0;
+	filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='#BFBFBF', Positive=true);
+}
+
+.menu{
+	position:relative;
+	top: -1px;
+	left: -1px;
+	width:100%;
+	height:100%;
+	border: 1px solid #666666;
+	z-index:1;
+}
+
+.iframe_body, .iframe_bodymenu,.iframe_photo,.iframe_news,.iframe_latest,.iframe_line,.iframe_bodymenu2{
+	background: #FFFFFF;
+	margin : 0px;
+	scrollbar-3dlight-color: #666666;
+	scrollbar-highlight-color: #FFFFFF;
+    scrollbar-face-color: #FFFFFF;
+    scrollbar-arrow-color: #FFFFFF;
+    scrollbar-shadow-color: #FFFFFF;
+    scrollbar-darkshadow-color: #666666;
+    scrollbar-base-color: #666666;
+    scrollbar-track-color: #FFFFFF;
+}
+
+.iframe_news{
+	background : url('img/back/newsback.gif') repeat-y right;
+}
+.iframe_latest{
+	background : url('img/back/newsback2.gif') repeat-y right;
+}
+
+.iframe_line{
+	background : url('img/back/vline.gif') repeat-y right;
+}
+.newsbox{	
+	background: #DDDDDD;
+}
+
+.newstitle{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color:#000000;
+	font-size: 12px;	
+}
+
+.iframe_bodymenu{	
+	background : url('img/back/menuback.gif') repeat-y;
+}
+.iframe_bodymenu2{	
+	background : url('img/back/menuback2.gif') repeat-y;
+}
+ 
+
+
+.title,.titletable,.menutit{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;	
+	line-height : 12px; 
+	font-size:10px ; 
+	color : #000000;
+}
+
+.menutit{line-height:13px;}
+
+.titletable{height: 15px;}
+
+.finnsecond, .finnthird, .finntemp, .finnlatest{
+	position:absolute;
+	top:80px;
+	left:206px;
+	width:10px;
+	background-color: #FFFFFF;
+	height: 10px;
+	border: 1px solid #666666;
+	visibility: hidden;
+	z-index: auto;
+	filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=4, OffY=4, Color='#BFBFBF', Positive=true);
+}
+
+.finntemp{
+	top:417px;
+	left:206px;
+	width:322px;
+	height:125px;
+}
+.finntempcontent{
+	position:relative;
+	top:-1px;
+	left:-1px;
+	width:100%;
+	height:105px;	
+	border: 1px solid #666666;
+}
+.finnlatestcontent{
+	position:relative;
+	top:-1px;
+	left:-1px;
+	width: 100%;
+	height: 40px;	
+	border: 1px solid #666666;
+}	
+
+.finnsecondcontent, .finnthirdcontent{
+	position:relative;
+	top:-1px;
+	left:-1px;
+	width: 100%;
+	height: 100%;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
+	scrollbar-3dlight-color: #666666;
+	scrollbar-highlight-color: #FFFFFF;
+    scrollbar-face-color: #FFFFFF;
+    scrollbar-arrow-color: #FFFFFF;
+    scrollbar-shadow-color: #FFFFFF;
+    scrollbar-darkshadow-color: #666666;
+    scrollbar-base-color: #666666;
+    scrollbar-track-color: #FFFFFF;
+	visibility: inherit;
+	z-index:1;
+}
+
+.style1{
+	font : normal normal 10px Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+a.lat_news:link, A:visited, A:active {
+	COLOR: #000000;
+}
+a.lat_news:hover {
+	COLOR: #999999;
+}
+a.mail:link, A:visited, A:active {
+	font : normal normal 10px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	COLOR: #000000;
+}
+a.mail:hover {
+	font : normal normal 10px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	COLOR: #999999;
+}
+h1{
+	font : normal bold 16px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	COLOR: #000000;
+}
+h2{
+	font : normal bold 12px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	COLOR: #000000;
+}
+h3{
+	font : normal bold 9px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	COLOR: #000000;
+}
+.text{
+	position:absolute;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	top:10px;
+	right:10px;
+	left:20px;
+	line-height : 12px;
+	font-size : 10px;
+}

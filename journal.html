@@ -1,0 +1,109 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>finn</title>
+<meta http-equiv="Content-Type" content="text/html; charset=wondows-1251">
+<META HTTP-EQUIV="expires" CONTENT="0">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<link href="finn.css" rel="stylesheet" type="text/css">
+<link href="menu.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" src="javascript/slidemenu.js" type="text/javascript">
+/**********************************************************************************
+SlideMenu 2.0
+*   Copyright (C) 2002 Thomas Brattli
+*   This script was released at DHTMLCentral.com
+*   Visit for more great scripts!
+*   This may be used and changed freely as long as this msg is intact!
+*   We will also appreciate any links you could give us.
+*
+*   Made by Thomas Brattli
+*
+*Script date: 08/05/2002 (keep this date to check versions)
+*Updated to modify div/iframe size, placement and contents 16/06/03
+*flash and dhtml menus built same from database 
+*   Mods by James Kaye 
+*   j.kaye@toffeeapplecreative.com
+*********************************************************************************/
+</script>
+<style title="text/css">
+
+/* NEEDED STYLES */
+div.slideMenuBG{position:absolute; left:0; top:0; z-index:1}
+div.slideMenuText{position:absolute; left:2; top:2; z-index:200;}
+/* NEEDED ----- This class should be named like this:
+	#NAME_OF_YOUR_MENUcont
+*/
+#slideMenucont{position:absolute; height:*; width:169; visibility:hidden;}
+
+</style>
+
+</head>
+<body marginleft="0"  bgcolor="white" marginheight="0" class="iframe_bodymenu2">
+<script>
+
+slideMenu = new createSlideMenu("slideMenu")
+
+
+slideMenu.menuy=1 
+slideMenu.menux=0 
+slideMenu.useImages = 1 
+slideMenu.pxspeed=20 
+slideMenu.timspeed=25 
+slideMenu.inset = 0 
+slideMenu.arrow = 0 
+	
+
+//Needed dummy classes - 
+slideMenu.bgClass =	"slideMenuBG"
+slideMenu.txtClass = "slideMenuText"
+
+slideMenu.level[0] = new slideMenu_makeLevel(
+	left = 0,
+	width = 165,
+	height = 15,
+	between = 1,
+	className = "clSlideMenu",
+	classNameA = "clA0",
+	regImage = "img/menu1cl.gif",
+	roundImg = "img/menu3op.gif",
+	roundImg2 = "",
+	subImg = "",
+	subRound= "")
+	
+slideMenu.level[1] = new slideMenu_makeLevel(12,155,15,2,"clSlideMenu","clA1","img/menu2op.gif")
+//Image preload ---
+for(var i=0;i<slideMenu.level;i++){
+	var l = slideMenu.level[i]
+	new preLoadBackgrounds(l.regImage,l.roundImg,l.roundImg2,l.subImg,l.subRound)
+}
+
+//Menu 1 -----------------------
+slideMenu.makeMenu('top','Минск - июль 15-17, 2004','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,450,395,\'pages/creation/journal/journal04_01.html\',\'журнал\');')
+slideMenu.makeMenu('top','октябрь 11-12, 2003','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,450,395,\'_temp/error_sorry.html\',\'error\');')
+slideMenu.makeMenu('top','август 2003','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,450,395,\'pages/creation/journal/journal03_01.html\',\'журнал\');')
+
+slideMenu.makeMenu('top','Нидерланды (Июнь 2003)')
+slideMenu.makeMenu('sub','Дом-Брест-Польша','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,450,395,\'pages/creation/journal/netherlands03_02.html\',\'журнал\');')
+slideMenu.makeMenu('sub','Польша-Германия-Нидерланды','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,450,395,\'pages/creation/journal/netherlands03_03.html\',\'журнал\');')
+slideMenu.makeMenu('sub','день 2','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,450,395,\'pages/creation/journal/netherlands03_04.html\',\'журнал\');')
+slideMenu.makeMenu('sub','день 3','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,450,395,\'pages/creation/journal/netherlands03_05.html\',\'журнал\');')
+slideMenu.makeMenu('sub','день 4','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,450,395,\'pages/creation/journal/netherlands03_06.html\',\'журнал\');')
+slideMenu.makeMenu('sub','день 5','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,450,395,\'pages/creation/journal/netherlands03_07.html\',\'журнал\');')
+slideMenu.makeMenu('sub','день 6','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,450,395,\'pages/creation/journal/netherlands03_08.html\',\'журнал\');')
+slideMenu.makeMenu('sub','день 7','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,450,395,\'pages/creation/journal/netherlands03_09.html\',\'журнал\');')
+slideMenu.makeMenu('sub','день 8','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,450,395,\'pages/creation/journal/netherlands03_10.html\',\'журнал\');')
+slideMenu.makeMenu('sub','день 9','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,450,395,\'pages/creation/journal/netherlands03_11.html\',\'журнал\');')
+slideMenu.makeMenu('sub','день 10','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,450,395,\'pages/creation/journal/netherlands03_12.html\',\'журнал\');')
+slideMenu.makeMenu('sub','день 11 - вечеринка','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,450,395,\'pages/creation/journal/netherlands03_13.html\',\'журнал\');')
+slideMenu.makeMenu('sub','день 12','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,450,395,\'pages/creation/journal/netherlands03_14.html\',\'журнал\');')
+slideMenu.makeMenu('sub','день 13','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,450,395,\'pages/creation/journal/netherlands03_15.html\',\'журнал\');')
+slideMenu.makeMenu('sub','день 14 - Matrix','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,450,395,\'pages/creation/journal/netherlands03_16.html\',\'журнал\');')
+slideMenu.makeMenu('sub','день 15 - последний день','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,450,395,\'pages/creation/journal/netherlands03_17.html\',\'журнал\');')
+slideMenu.makeMenu('sub','Нидерланды-Германия (cd-shop)-Польша','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,450,395,\'pages/creation/journal/netherlands03_18.html\',\'журнал\');')
+slideMenu.makeMenu('sub','Sweet home','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,450,395,\'pages/creation/journal/netherlands03_19.html\',\'журнал\');')
+
+slideMenu.init()		
+</script>
+</body>
+</html>

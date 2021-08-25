@@ -1,0 +1,10 @@
+<link rel=stylesheet href="gb.css" type="text/css">
+<hr size="1" width="500" color="666666">
+<SCRIPT LANGUAGE=javascript>
+<!--
+document.write(C2UT({JSDATE}));
+//-->
+</SCRIPT><NOSCRIPT><p class="guestmess">{DATE}</NOSCRIPT><p class="guestmess">
+<a href="mailto:{AUTHOREMAIL}">{AUTHORNAME}</a>&nbsp;&nbsp;&nbsp;<a href={URL}>{URL}</A><BR>
+{MESSAGE}<BR>
+<p class="adminmess"><i>{OWNERREPLY}</i></p>

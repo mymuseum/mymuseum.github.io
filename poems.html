@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>finn</title>
+<meta http-equiv="Content-Type" content="text/html; charset=wondows-1251">
+<META HTTP-EQUIV="expires" CONTENT="0">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<link href="finn.css" rel="stylesheet" type="text/css">
+<link href="menu.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" src="javascript/slidemenu.js" type="text/javascript">
+/**********************************************************************************
+SlideMenu 2.0
+*   Copyright (C) 2002 Thomas Brattli
+*   This script was released at DHTMLCentral.com
+*   Visit for more great scripts!
+*   This may be used and changed freely as long as this msg is intact!
+*   We will also appreciate any links you could give us.
+*
+*   Made by Thomas Brattli
+*
+*Script date: 08/05/2002 (keep this date to check versions)
+*Updated to modify div/iframe size, placement and contents 16/06/03
+*flash and dhtml menus built same from database 
+*   Mods by James Kaye 
+*   j.kaye@toffeeapplecreative.com
+*********************************************************************************/
+</script>
+<style title="text/css">
+
+/* NEEDED STYLES */
+div.slideMenuBG{position:absolute; left:0; top:0; z-index:1}
+div.slideMenuText{position:absolute; left:2; top:2; z-index:200;}
+/* NEEDED ----- This class should be named like this:
+	#NAME_OF_YOUR_MENUcont
+*/
+#slideMenucont{position:absolute; height:*; width:169; visibility:hidden;}
+
+</style>
+
+</head>
+<body marginleft="0"  bgcolor="white" marginheight="0" class="iframe_bodymenu2">
+<script>
+
+slideMenu = new createSlideMenu("slideMenu")
+
+
+slideMenu.menuy=1 
+slideMenu.menux=0 
+slideMenu.useImages = 1 
+slideMenu.pxspeed=20 
+slideMenu.timspeed=25 
+slideMenu.inset = 0 
+slideMenu.arrow = 0 
+	
+
+//Needed dummy classes - 
+slideMenu.bgClass =	"slideMenuBG"
+slideMenu.txtClass = "slideMenuText"
+
+slideMenu.level[0] = new slideMenu_makeLevel(
+	left = 0,
+	width = 165,
+	height = 15,
+	between = 1,
+	className = "clSlideMenu",
+	classNameA = "clA0",
+	regImage = "img/menu1cl.gif",
+	roundImg = "img/menu3op.gif",
+	roundImg2 = "",
+	subImg = "",
+	subRound= "")
+	
+slideMenu.level[1] = new slideMenu_makeLevel(12,155,15,2,"clSlideMenu","clA1","img/menu2op.gif")
+//Image preload ---
+for(var i=0;i<slideMenu.level;i++){
+	var l = slideMenu.level[i]
+	new preLoadBackgrounds(l.regImage,l.roundImg,l.roundImg2,l.subImg,l.subRound)
+}
+
+//Menu 1 -----------------------
+slideMenu.makeMenu('top','Дневник Бледного Ангела','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,450,395,\'pages/creation/poems/palediary.html\',\'рассказы\');')
+slideMenu.makeMenu('top','Мост','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,450,395,\'pages/creation/poems/poem06.html\',\'рассказы\');')
+slideMenu.makeMenu('top','Бинт','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,450,395,\'pages/creation/poems/poem05.html\',\'рассказы\');')
+slideMenu.makeMenu('top','Суд в Поднебесной','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,450,395,\'pages/creation/poems/poem04.html\',\'рассказы\');')
+slideMenu.makeMenu('top','Белый диалог','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,450,395,\'pages/creation/poems/poem03.html\',\'рассказы\');')
+slideMenu.makeMenu('top','Обнажённая ночь','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,450,395,\'pages/creation/poems/poem02.html\',\'рассказы\');')
+slideMenu.makeMenu('top','Max Payne','javascript:parent.togglemenu(\'finnthird\',\'visible\',80,410,450,395,\'pages/creation/poems/poem01.html\',\'рассказы\');')
+
+slideMenu.init()		
+</script>
+</body>
+</html>
