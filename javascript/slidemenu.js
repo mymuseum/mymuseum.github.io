@@ -55,7 +55,7 @@ createSlideMenu.prototype.init = function(){
 		el = this.menus[this.topmenus[j]]
 		el.o = new makeMenuObj(this.name+"_"+el.num,this.name+"cont")
 		el.o.moveIt(this.l[0].left,yy); el.top = j; el.origy = yy
-		el.o.id = el.id; el.o.status=1; 
+		el.o.id = el.id; el.o.status=1;
 		el.o.h = this.l[0].height; el.img = this.l[0].regImage
 		yy+=el.o.h + this.l[0].between; el.o.clipTo(0,this.l[0].width,el.o.h,0,1)
 		if(j!=this.topmenus.length-1)	el.nexttop = this.topmenus[el.top+1] 
