@@ -12,8 +12,6 @@ SlideMenu 2.0
 
 ** Feel free to remove all comments in this file (and the HTML file)
 ** as long the copyright message is intact to make the files smaller.
-*********************************************************************************/
-
 /************************************************************************************
 Making cross-browser objects
 ************************************************************************************/
@@ -278,7 +276,7 @@ createSlideMenu.prototype.makeMenu = function(type,text,lnk,target,end){
 		if(target) tg =' target="'+target+'" '
 		str+='<div class="'+this.txtClass+'"><a href="'+lnk+'" '+tg+' onclick="'+this.name+'.switchMenu('+this.curr+'); if(document.getElementById) this.blur(); '
    	if(lnk=="#") str+='return false'
-    str+='" class="'+this.l[m.lev].classNameA+'"> '+text+'</a><br /></div>\n'
+    str+='" class="'+this.l[m.lev].classNameA+'">Â '+text+'</a><br /></div>\n'
 		str+="</div>\n\n" //main div end
 		document.write(str)
 	}
